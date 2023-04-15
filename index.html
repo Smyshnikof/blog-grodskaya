@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css" />
+  </head>
+  <body>
+    <header>
+      <div class="p-3 mb-3 border-bottom fixed-top bg-white">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
+            >
+              <img
+                class="bi me-2"
+                width="40"
+                height="32"
+                src="./icon/github.png"
+                alt="logo"
+              />
+            </a>
+
+            <ul
+              class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            >
+              <li>
+                <a href="#events" class="nav-link px-2 link-secondary"
+                  >События</a
+                >
+              </li>
+              <li>
+                <a href="#article" class="nav-link px-2 link-dark">Статьи</a>
+              </li>
+              <li>
+                <a href="#form" class="nav-link px-2 link-dark"
+                  >Обратная связь</a
+                >
+              </li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Поиск..."
+                aria-label="Search"
+              />
+            </form>
+
+            <div class="dropdown text-end">
+              <a
+                href="/index.html"
+                class="d-block link-dark text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./icon/user.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">Предложить статью</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Просмотреть статьи</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper" id="events">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/картинка1.jpg"
+              alt="Неудалось загрузить картинку"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/картинка2.webp"
+              alt="Неудалось загрузить картинку"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/картинка3.webp"
+              alt="Неудалось загрузить картинку"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/картинка4.jpg"
+              alt="Неудалось загрузить картинку"
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </header>
+    <main class="my-5" id="article">
+      <section class="my-4">
+        <div class="container container-width">
+          <h2>Статьи</h2>
+          <div class="row">
+            <div class="col-6 pe-0">
+              <div
+                class="card card-height text-white position-relative overflow-hidden"
+              >
+                <a
+                  class="text-white text-decoration-none card-wrapper-link"
+                  href="./blog/blog_page.html"
+                >
+                  <div class="card-img card-img-1"></div>
+                  <img
+                    class="card-img-top card-img-first"
+                    src="./img/картинка для карточки1.1.jpg"
+                    alt="Неудалось загрузить картинку"
+                    height="436"
+                  />
+                  <div class="card-img-overlay card-text-top-first py-1">
+                    <p class="card-text-first">22.01.2023</p>
+                    <h3 class="card-title-first">Китайский Новый Год</h3>
+                    <p class="card-text-first">text</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-6">
+                  <div
+                    class="card size-card text-white position-relative overflow-hidden"
+                  >
+                    <a
+                      class="text-white text-decoration-none card-wrapper-link"
+                      href="#"
+                    >
+                      <div class="card-img card-img-2"></div>
+                      <img
+                        class="card-img-top"
+                        src="./img/картинка для карточки1.2.jpg"
+                        alt="Неудалось загрузить картинку"
+                        height="206"
+                      />
+                      <div class="card-img-overlay card-text-top">
+                        <p class="card-text">22.01.2023</p>
+                        <h3 class="card-title">Китайский Новый Год</h3>
+                        <p class="card-text">text</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div
+                    class="card size-card text-white position-relative overflow-hidden"
+                  >
+                    <a
+                      class="text-white text-decoration-none card-wrapper-link"
+                      href="#"
+                    >
+                      <div class="card-img card-img-3"></div>
+                      <img
+                        class="card-img-top"
+                        src="./img/картинка для карточки1.3.jpg"
+                        alt="Неудалось загрузить картинку"
+                        height="206"
+                      />
+                      <div class="card-img-overlay card-text-top">
+                        <p class="card-text">22.01.2023</p>
+                        <h3 class="card-title">Китайский Новый Год</h3>
+                        <p class="card-text">text</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row my-4">
+                <div class="col-6">
+                  <div
+                    class="card size-card text-white position-relative overflow-hidden"
+                  >
+                    <a
+                      class="text-white text-decoration-none card-wrapper-link"
+                      href="#"
+                    >
+                      <div class="card-img card-img-4"></div>
+                      <img
+                        class="card-img-top"
+                        src="./img/картинка для карточки1.4.jpg"
+                        alt="Неудалось загрузить картинку"
+                        height="206"
+                      />
+                      <div class="card-img-overlay card-text-top">
+                        <p class="card-text">22.01.2023</p>
+                        <h3 class="card-title">Китайский Новый Год</h3>
+                        <p class="card-text">text</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div
+                    class="card size-card text-white position-relative overflow-hidden"
+                  >
+                    <a
+                      class="text-white text-decoration-none card-wrapper-link"
+                      href="#"
+                    >
+                      <div class="card-img card-img-5"></div>
+                      <img
+                        class="card-img-top"
+                        src="./img/картинка для карточки1.5.jpg"
+                        alt="Неудалось загрузить картинку"
+                        height="206"
+                      />
+                      <div class="card-img-overlay card-text-top">
+                        <p class="card-text">22.01.2023</p>
+                        <h3 class="card-title">Китайский Новый Год</h3>
+                        <p class="card-text">text</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row flex-row-reverse">
+            <div class="col-6 pe-0">
+              <div
+                class="card card-height text-white position-relative overflow-hidden"
+              >
+                <a
+                  class="text-white text-decoration-none card-wrapper-link"
+                  href="#"
+                >
+                  <div class="card-img card-img-6"></div>
+                  <img
+                    class="card-img-top card-img-second"
+                    src="./img/картинка для карточки2.1.jpg"
+                    alt="Неудалось загрузить картинку"
+                    height="434"
+                  />
+                  <div class="card-img-overlay card-text-top-first py-1">
+                    <p class="card-text-first">22.01.2023</p>
+                    <h3 class="card-title-first">Китайский Новый Год</h3>
+                    <p class="card-text-first">text</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-6">
+                  <div
+                    class="card size-card text-white position-relative overflow-hidden"
+                  >
+                    <a
+                      class="text-white text-decoration-none card-wrapper-link"
+                      href="#"
+                    >
+                      <div class="card-img card-img-7"></div>
+                      <img
+                        class="card-img-top"
+                        src="./img/картинка для карточки2.2.jpg"
+                        alt="Неудалось загрузить картинку"
+                        height="206"
+                      />
+                      <div class="card-img-overlay card-text-top">
+                        <p class="card-text">22.01.2023</p>
+                        <h3 class="card-title">Китайский Новый Год</h3>
+                        <p class="card-text">text</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div
+                    class="card size-card text-white position-relative overflow-hidden"
+                  >
+                    <a
+                      class="text-white text-decoration-none card-wrapper-link"
+                      href="#"
+                    >
+                      <div class="card-img card-img-8"></div>
+                      <img
+                        class="card-img-top"
+                        src="./img/картинка для карточки2.3.jpg"
+                        alt="Неудалось загрузить картинку"
+                        height="206"
+                      />
+                      <div class="card-img-overlay card-text-top">
+                        <p class="card-text">22.01.2023</p>
+                        <h3 class="card-title">Китайский Новый Год</h3>
+                        <p class="card-text">text</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row my-4">
+                <div class="col-6">
+                  <div
+                    class="card size-card text-white position-relative overflow-hidden"
+                  >
+                    <a
+                      class="text-white text-decoration-none card-wrapper-link"
+                      href="#"
+                    >
+                      <div class="card-img card-img-9"></div>
+                      <img
+                        class="card-img-top"
+                        src="./img/картинка для карточки2.4.jpg"
+                        alt="Неудалось загрузить картинку"
+                        height="206"
+                      />
+                      <div class="card-img-overlay card-text-top">
+                        <p class="card-text">22.01.2023</p>
+                        <h3 class="card-title">Китайский Новый Год</h3>
+                        <p class="card-text">text</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div
+                    class="card size-card text-white position-relative overflow-hidden"
+                  >
+                    <a
+                      class="text-white text-decoration-none card-wrapper-link"
+                      href="#"
+                    >
+                      <div class="card-img card-img-10"></div>
+                      <img
+                        class="card-img-top"
+                        src="./img/картинка для карточки2.5.jpg"
+                        alt="Неудалось загрузить картинку"
+                        height="206"
+                      />
+                      <div class="card-img-overlay card-text-top">
+                        <p class="card-text">22.01.2023</p>
+                        <h3 class="card-title">Китайский Новый Год</h3>
+                        <p class="card-text">text</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-grid col-4 mx-auto">
+            <a href="./blog.html" class="text-center">
+              <button
+                class="btn btn-outline-dark"
+                type="button"
+                style="width: 400px"
+              >
+                Все статьи
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="container" id="form">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h2 class="text-start">Обратная связь</h2>
+            <form action="#" method="post" class="form-floating">
+              <fieldset>
+                <legend>Контакты</legend>
+                <div class="my-3">
+                  <label for="e-mail">Почта:*</label>
+                  <input
+                    type="email"
+                    name="mail"
+                    id="e-mail"
+                    required
+                    placeholder="blog@gmail.com"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="my-3">
+                  <label for="name">Имя:*</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    placeholder="Алиса"
+                    class="form-control"
+                  />
+                </div>
+              </fieldset>
+
+              <div class="my-3">
+                <label for="message">Обратная связь</label>
+                <textarea
+                  name="komment"
+                  id="message"
+                  rows="10"
+                  placeholder="Предложите идею"
+                  class="form-control"
+                ></textarea>
+              </div>
+
+              <div class="my-3">
+                <label for="sub">Подписаться на рассылку</label>
+                <input type="checkbox" name="sub" id="sub" />
+              </div>
+              <div class="my-3">
+                <button type="submit" class="btn btn-outline-dark">
+                  Отправить
+                </button>
+                <p class="my-3">*-обязательные поля</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">
+          &copy; 2023 Grodskaya Alisa
+        </p>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="/" class="nav-link px-2 text-body-secondary">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="#events" class="nav-link px-2 text-body-secondary"
+              >События</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#article" class="nav-link px-2 text-body-secondary"
+              >Статьи</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#form" class="nav-link px-2 text-body-secondary"
+              >Обратная связь</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
